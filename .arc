@@ -7,7 +7,6 @@ breakout-team
 @http
 post /api/breakouts
 get /api/breakouts/:slug
-post /api/presence/:room
 
 @aws
 region eu-west-1
