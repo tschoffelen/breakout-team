@@ -1,0 +1,10 @@
+{
+  "name": "post-api-breakouts",
+  "version": "1.0.0",
+  "license": "ISC",
+  "main": "index.js",
+  "dependencies": {
+    "@architect/functions": "^3.9.3",
+    "uuid": "^8.0.0"
+  }
+}

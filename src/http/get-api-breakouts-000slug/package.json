@@ -1,0 +1,9 @@
+{
+  "name": "get-api-breakouts-000slug",
+  "version": "1.0.0",
+  "license": "ISC",
+  "main": "index.js",
+  "dependencies": {
+    "@architect/functions": "^3.9.3"
+  }
+}

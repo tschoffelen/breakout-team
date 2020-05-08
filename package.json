@@ -1,0 +1,42 @@
+{
+  "name": "@schof/breakout-team",
+  "description": "Breakout.team video rooms.",
+  "version": "1.0.0",
+  "author": "Thomas Schoffelen <thomas@schof.co>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "deploy": "yarn build && arc deploy production",
+    "build": "gatsby build",
+    "start": "gatsby develop",
+    "clean": "gatsby clean",
+    "test": "prettier --write \"**/*.{css,js,jsx,json,md}\""
+  },
+  "dependencies": {
+    "@architect/functions": "^3.9.3",
+    "axios": "^0.19.2",
+    "gatsby": "2.21.17",
+    "gatsby-plugin-create-client-paths": "^2.3.1",
+    "gatsby-plugin-manifest": "2.4.2",
+    "gatsby-plugin-offline": "3.2.1",
+    "gatsby-plugin-postcss": "2.3.1",
+    "gatsby-plugin-react-helmet": "3.3.1",
+    "gatsby-plugin-sharp": "2.6.2",
+    "prop-types": "15.7.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-helmet": "6.0.0",
+    "swr": "^0.2.0",
+    "uuid": "^8.0.0"
+  },
+  "devDependencies": {
+    "@architect/architect": "^6.3.5",
+    "@architect/utils": "^1.5.5",
+    "@tailwindcss/custom-forms": "0.2.1",
+    "autoprefixer": "9.7.6",
+    "babel-eslint": "10.1.0",
+    "cssnano": "4.1.10",
+    "prettier": "2.0.5",
+    "tailwindcss": "1.4.5",
+    "tailwindcss-font-inter": "^1.0.8"
+  }
+}
