@@ -17,10 +17,10 @@ const Loading = () => (
     </Layout>
 );
 
-function ContactPage({ '*': match }) {
+function RoomPage({ '*': match }) {
     const [slug, room] = match.split('/');
     const { data, error } = useSWR(
-        `${window.location.href.indexOf('localhost') >= 0 ? 'https://breakout.team' : ''}/api/breakouts/${slug
+        `${window && window.location.href.indexOf('localhost') >= 0 ? 'https://breakout.team' : ''}/api/breakouts/${slug
         }?presence=${presenceId()}&room=${encodeURIComponent(room || '')}`,
         axios.get,
         {
@@ -99,4 +99,4 @@ function ContactPage({ '*': match }) {
     );
 }
 
-export default ContactPage;
+export default RoomPage;

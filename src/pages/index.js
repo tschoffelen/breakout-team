@@ -27,7 +27,7 @@ function IndexPage() {
 
         try {
             const { data } = await axios.post(
-                `${window.location.href.indexOf('localhost') >= 0 ? 'https://breakout.team' : ''}/api/breakouts`,
+                `${window && window.location.href.indexOf('localhost') >= 0 ? 'https://breakout.team' : ''}/api/breakouts`,
                 {
                     type,
                     rooms: rooms.filter((room) => !!room.trim().length),
