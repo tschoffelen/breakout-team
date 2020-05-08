@@ -1,6 +1,10 @@
 const { v4: uuid } = require("uuid");
 
 export const presenceId = () => {
+    if (typeof window === 'undefined') {
+        return null;
+    }
+
     if ('presenceUUID' in window && window.presenceUUID) {
         return window.presenceUUID;
     }

@@ -20,8 +20,8 @@ const Loading = () => (
 function RoomPage({ '*': match }) {
     const [slug, room] = match.split('/');
     const { data, error } = useSWR(
-        `${window && window.location.href.indexOf('localhost') >= 0 ? 'https://breakout.team' : ''}/api/breakouts/${slug
-        }?presence=${presenceId()}&room=${encodeURIComponent(room || '')}`,
+        `${typeof window !== 'undefined' && window.location.href.indexOf('localhost') >= 0 ? 'https://breakout.team' : ''
+        }/api/breakouts/${slug}?presence=${presenceId()}&room=${encodeURIComponent(room || '')}`,
         axios.get,
         {
             refreshInterval: 10000
@@ -98,5 +98,7 @@ function RoomPage({ '*': match }) {
         </Layout>
     );
 }
+
+
 
 export default RoomPage;
