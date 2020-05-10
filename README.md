@@ -9,8 +9,8 @@ Create configurable video breakout rooms. Perfect for people to get together aft
 
 It has two modes:
 
-* Auto grouping - you specify the number of rooms, and participants will randomly be added to a group when they go to the share URL.
-* Named groups - participants can choose from a number of groups with different topics, created by you in advance.
+* **Auto grouping** — you specify the number of rooms, and participants will randomly be added to a group when they go to the share URL.
+* **Named groups** — participants can choose from a number of groups with different topics, created by you in advance.
 
 
 ## Technologies
