@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@architect/functions": "^3.9.3",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "gatsby": "2.21.17",
     "gatsby-plugin-create-client-paths": "^2.3.1",
     "gatsby-plugin-manifest": "2.4.2",
